@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --navy-blue: #5d6081;
+  --grayish-blue-text: #b4bcca;
+  --indigo: #2d3253;
+  --gray-text: #6a6a6a;
+  --light-gray-bgc: #f9f9f9;
+  --bright-red: #ff515a;
+  --amber-yellow: #f59f00;
+}
