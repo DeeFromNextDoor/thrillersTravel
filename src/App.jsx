@@ -1,9 +1,13 @@
 import { useState } from "react";
-
-import "./App.css";
+import "./index.css";
+import Home from "./components/home/Home";
 
 function App() {
-  return <div className=""></div>;
+  return (
+    <div className="app">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
