@@ -1,15 +1,29 @@
 .side-bar {
-  width: 18%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  gap: 20px;
   background-color: #fff;
+  color: var(--gray-text);
+  padding: 10px 20px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+.title {
+  margin: 10px 0;
+}
+
+.title span {
+  color: var(--indigo);
+}
+
 .user-profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 }
 
 .profile-image {
@@ -33,4 +47,54 @@
   bottom: -10%;
   right: 50%;
   transform: translateX(50%);
+  background-color: var(--indigo);
+  color: #fff;
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+}
+
+.routes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 20px 5px;
+  gap: 30px;
+}
+
+.route {
+  display: flex;
+  gap: 10px;
+  word-wrap: normal;
+  text-decoration: none;
+  color: var(--gray-text);
+}
+
+.route.active {
+  color: var(--indigo);
+}
+
+.route i {
+  font-size: 16px;
+}
+
+.route:hover {
+  color: var(--indigo);
+}
+
+.logout {
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  margin-top: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--gray-text);
+}
+
+.logout:hover {
+  color: var(--indigo);
 }

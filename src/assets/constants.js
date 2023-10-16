@@ -8,4 +8,7 @@ export const profileDetails = {
 export const routes = [
   { text: "Dashboard", icon: "bi bi-house-dash" },
   { text: "Explore City", icon: "bi bi-bounding-box-circles" },
+  { text: "Ticket", icon: "bi bi-ticket-detailed-fill" },
+  { text: "Favorites", icon: "bi bi-heart" },
+  { text: "Setting", icon: "bi bi-gear" },
 ];
