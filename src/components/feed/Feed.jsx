@@ -25,9 +25,9 @@ const Feed = () => {
     <div className="feed">
       <SearchBar />
       <Hero />
-      <HotelContainer className="" />
-      <HotelContainer />
-      <HotelContainer />
+      <HotelContainer className="trending-destinations" />
+      <HotelContainer className="best-offers" />
+      <HotelContainer className="explore-france" />
     </div>
   );
 };

@@ -14,9 +14,29 @@
   position: relative;
 }
 
+.hero-content .search {
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--indigo);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.hero-content .search:hover {
+  background-color: var(--navy-blue);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .search:active {
+  background-color: var(--indigo);
+  box-shadow: none;
+}
+
 .select-options {
   position: absolute;
-  padding: 30px;
+  padding: 20px;
   width: 80%;
   right: 50%;
   transform: translateX(50%);
@@ -24,6 +44,8 @@
   border-radius: 10px;
   background-color: #fff;
   display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: space-around;
 }
 
@@ -34,4 +56,12 @@
 
 .select-options select {
   border: none;
+}
+
+.select-options select::placeholder {
+  color: var(--grayish-blue-text);
+}
+
+.select-options select:focus {
+  border-color: var(--bright-red);
 }

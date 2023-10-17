@@ -15,6 +15,7 @@ export const Hero = () => {
           <Select label="Where are you going?" options={destinationOptions} />
           <Select label="Check-in date" options={checkinDateOptions} />
           <Select label="Number of adults" options={adultsOptions} />
+          <button className="search">Search</button>
         </div>
       </div>
     </div>
