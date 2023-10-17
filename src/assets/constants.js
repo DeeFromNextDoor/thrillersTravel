@@ -37,44 +37,88 @@ export const adultsOptions = [
   { value: "4", label: "4" },
 ];
 
-const trendingDestinations = [
+export const placeholderImage =
+  " https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60";
+
+export const trendingDestinations = [
+  { title: "Trending Destination" },
   {
-    name: "Hotel A",
-    price: "$150",
-    // Other hotel properties
+    image:
+      "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    location: "Kyoto, Japan",
+    rating: "4.5/5",
+    description: "Discovering the cultural heritage of Kyoto.",
+    price: "$600,000.00",
   },
   {
-    name: "Hotel B",
-    price: "$120",
-    // Other hotel properties
+    image:
+      "https://images.unsplash.com/photo-1529551739587-e242c564f727?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    location: "Santorini, Greece",
+    rating: "5/5",
+    description: "Relaxing on the beautiful beaches of Santorini.",
+    price: "$700,000.00",
   },
-  // Add more hotels as needed
+  {
+    image:
+      "https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    location: "Montmarte, France",
+    rating: "4/5",
+    description: "Visiting the historic Montmarte district in Paris.",
+    price: "$450,000.00",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1639678349557-ffe5bed73ce7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    location: "Amsterdam, Netherlands",
+    rating: "4/5",
+    description: "Cruising the canals of picturesque Amsterdam.",
+    price: "$580,000.00",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1639678349557-ffe5bed73ce7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    location: "Amsterdam, Netherlands",
+    rating: "4/5",
+    description: "Cruising the canals of picturesque Amsterdam.",
+    price: "$580,000.00",
+  },
 ];
 
-const bestOffers = [
+export const bestOffers = [
+  { title: "Best Offers" },
   {
-    name: "Hotel X",
-    price: "$90",
-    // Other hotel properties
+    image:
+      "https://images.unsplash.com/photo-1614957004131-9e8f2a13123c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    name: "7Seasons Apartments",
+    location: "Kensington/London",
+    price: "$65,000/night",
+    icon: "bi bi-heart",
   },
   {
+    image:
+      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     name: "Hotel Y",
-    price: "$110",
-    // Other hotel properties
+    location: "Downtown/New York",
+    price: "$120/night",
+    icon: "bi bi-star",
   },
-  // Add more hotels as needed
 ];
 
-const exploreParis = [
+export const exploreParis = [
   {
     name: "Paris Hotel 1",
     price: "$200",
-    // Other hotel properties
+    image:
+      "https://images.unsplash.com/photo-1600011689032-8b628b8a8747?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    location: "Paris, France",
+    rating: "4.5/5",
   },
   {
     name: "Paris Hotel 2",
     price: "$180",
-    // Other hotel properties
+    image:
+      "https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    location: "Paris, France",
+    rating: "4.3/5",
   },
-  // Add more hotels as needed
 ];

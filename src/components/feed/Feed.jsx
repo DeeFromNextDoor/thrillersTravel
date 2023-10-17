@@ -3,6 +3,12 @@ import "./Feed.css";
 import SearchBar from "../searchbar/SearchBar";
 import { Hero } from "../hero/Hero";
 import HotelContainer from "../hotelContainer/HotelContainer";
+import {
+  bestOffers,
+  exploreParis,
+  trendingDestinations,
+} from "../../assets/constants";
+
 // import { fetchHotelMetaData } from "../../api/hotelApi";
 
 const Feed = () => {
@@ -20,14 +26,19 @@ const Feed = () => {
 
   // console.log(hotelMetaData);
 
-  // const hotelContainers = [];
+  const hotelContainers = [];
   return (
     <div className="feed">
       <SearchBar />
       <Hero />
-      <HotelContainer className="trending-destinations" />
-      <HotelContainer className="best-offers" />
-      <HotelContainer className="explore-france" />
+      <div className="hotel-feeds">
+        <HotelContainer
+          className="trending-destinations"
+          products={trendingDestinations}
+        />
+        {/* <HotelContainer className="best-offers" products={bestOffers} />
+        <HotelContainer className="explore-france" products={exploreParis} /> */}
+      </div>
     </div>
   );
 };

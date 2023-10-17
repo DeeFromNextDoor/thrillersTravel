@@ -1,0 +1,100 @@
+.hotel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-container .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-cards {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.product-card {
+  flex: 0 0 32.7%;
+  scroll-snap-align: start;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* .product-card.active {
+  transform: translateX(100%);
+}
+
+.product-card.next {
+  transform: translateX(100%);
+}
+
+.product-card.prev {
+  transform: translateX(32.7%);
+} */
+.product-image {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.carousel i {
+  border: 1px solid var(--indigo);
+  color: var(--indigo);
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel i:hover {
+  background-color: var(--indigo);
+  color: #fff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--gray-text);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--indigo);
+}
