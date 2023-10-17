@@ -1,0 +1,37 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-content {
+  background-image: url("https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  border-radius: 15px;
+  position: relative;
+}
+
+.select-options {
+  position: absolute;
+  padding: 30px;
+  width: 80%;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -30%;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-options .select {
+  display: flex;
+  gap: 10px;
+}
+
+.select-options select {
+  border: none;
+}

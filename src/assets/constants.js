@@ -12,3 +12,69 @@ export const routes = [
   { text: "Favorites", icon: "bi bi-heart" },
   { text: "Setting", icon: "bi bi-gear" },
 ];
+
+export const destinationOptions = [
+  { icon: "bi bi-geo-alt-fill" },
+  { value: "paris", label: "Paris" },
+  { value: "new-york", label: "New York" },
+  { value: "london", label: "London" },
+  { value: "tokyo", label: "Tokyo" },
+];
+
+export const checkinDateOptions = [
+  { icon: "bi bi-card-checklist" },
+  { value: "2023-10-01", label: "October 1, 2023" },
+  { value: "2023-10-15", label: "October 15, 2023" },
+  { value: "2023-11-01", label: "November 1, 2023" },
+  { value: "2023-11-15", label: "November 15, 2023" },
+];
+
+export const adultsOptions = [
+  { icon: "bi bi-person" },
+  { value: "1", label: "1" },
+  { value: "2", label: "2" },
+  { value: "3", label: "3" },
+  { value: "4", label: "4" },
+];
+
+const trendingDestinations = [
+  {
+    name: "Hotel A",
+    price: "$150",
+    // Other hotel properties
+  },
+  {
+    name: "Hotel B",
+    price: "$120",
+    // Other hotel properties
+  },
+  // Add more hotels as needed
+];
+
+const bestOffers = [
+  {
+    name: "Hotel X",
+    price: "$90",
+    // Other hotel properties
+  },
+  {
+    name: "Hotel Y",
+    price: "$110",
+    // Other hotel properties
+  },
+  // Add more hotels as needed
+];
+
+const exploreParis = [
+  {
+    name: "Paris Hotel 1",
+    price: "$200",
+    // Other hotel properties
+  },
+  {
+    name: "Paris Hotel 2",
+    price: "$180",
+    // Other hotel properties
+  },
+  // Add more hotels as needed
+];

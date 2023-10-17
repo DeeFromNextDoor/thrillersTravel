@@ -4,3 +4,7 @@
   display: flex;
   background-color: var(--light-gray-bgc);
 }
+
+.home-feed {
+  width: 100%;
+}
