@@ -2,42 +2,27 @@ import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import SearchBar from "../searchbar/SearchBar";
 import { Hero } from "../hero/Hero";
-import HotelContainer from "../hotelContainer/HotelContainer";
+import TrendingDestination from "../hotelFeeds/TrendingDestination";
+import BestOffer from "../hotelFeeds/BestOffer";
+import { ExploreFrance } from "../hotelFeeds/ExploreFrance";
 import {
   bestOffers,
   exploreParis,
   trendingDestinations,
 } from "../../assets/constants";
 
-// import { fetchHotelMetaData } from "../../api/hotelApi";
-
 const Feed = () => {
-  // const [hotelMetaData, setHotelMetaData] = useState(null);
-
-  // useEffect(() => {
-  //   fetchHotelMetaData()
-  //     .then((data) => {
-  //       setHotelMetaData(data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching hotel metadata:", error);
-  //     });
-  // }, []);
-
-  // console.log(hotelMetaData);
-
-  const hotelContainers = [];
   return (
     <div className="feed">
       <SearchBar />
       <Hero />
       <div className="hotel-feeds">
-        <HotelContainer
+        <TrendingDestination
           className="trending-destinations"
           products={trendingDestinations}
         />
-        {/* <HotelContainer className="best-offers" products={bestOffers} />
-        <HotelContainer className="explore-france" products={exploreParis} /> */}
+        <BestOffer products={bestOffers} />
+        <ExploreFrance products={exploreParis} />
       </div>
     </div>
   );

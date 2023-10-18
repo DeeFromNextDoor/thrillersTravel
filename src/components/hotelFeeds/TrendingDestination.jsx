@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import "./HotelContainer.css";
+import "./TrendingDestination.css";
 import { placeholderImage } from "../../assets/constants";
 
-const HotelContainer = ({ products, className }) => {
+const TrendingDestination = ({ products, className }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -41,14 +41,21 @@ const HotelContainer = ({ products, className }) => {
               <img src={product.image || placeholderImage} alt={product.name} />
             </div>
             <div className="hotel-details">
-              <h2>{product.name}</h2>
-              <p>{product.location}</p>
-              <p>{product.price}</p>
-              <i className={product.icon}></i>
+              <h2>{product.name} </h2>
+              <div className="location-rating">
+                <p>{product.location}</p>
+                <span>
+                  <i className={product.icon}></i>
+                  {product.rating}
+                </span>
+              </div>
+              <p className="description">{product.description}</p>
+              <p className="price">{product.price}</p>
             </div>
           </div>
         ))}
       </div>
+
       <div className="pagination">
         {products.slice(1).map((product, index) => (
           <span
@@ -62,4 +69,4 @@ const HotelContainer = ({ products, className }) => {
   );
 };
 
-export default HotelContainer;
+export default TrendingDestination;

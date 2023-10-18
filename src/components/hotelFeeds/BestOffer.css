@@ -1,0 +1,68 @@
+.best-offer {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-offer .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.best-offer .head .view-all {
+  border: none;
+  font-weight: 600;
+}
+
+.best-offer .hotel-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.best-offer .hotel-card {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex: 1;
+  min-width: calc(20% - 20px);
+  max-width: 20%;
+}
+
+.best-offer .hotel-image {
+  /* max-width: 150px; */
+}
+
+.best-offer .hotel-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.best-offer .hotel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.best-offer .hotel-info .hotel-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.best-offer .location {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-text);
+}
+
+.best-offer .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .best-offer .hotel-card {
+    max-width: 40%; /* Adjust as needed for your design */
+  }
+}
