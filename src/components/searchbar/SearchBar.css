@@ -16,6 +16,7 @@
   align-items: center;
   border: 1px solid var(--grayish-blue-text);
   border-radius: 7px;
+  flex: 1;
 }
 
 .search-button {
@@ -42,7 +43,10 @@
 
 .date-notification {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  flex: 1;
 }
 
 .notification {
@@ -50,6 +54,11 @@
   padding: 1px 3px;
   border-radius: 5px;
   border: 1px solid var(--grayish-blue-text);
+  height: 100%;
+}
+
+.notification i {
+  flex: 1;
 }
 
 .notification span {
@@ -65,6 +74,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-bar .menu {
+  margin-right: 20px;
+  border: 1px solid red;
 }
 
 .search-bar .hamburger {
@@ -88,7 +102,7 @@
     width: 28px;
     height: 28px;
     border-radius: 5px;
-    position: relative;
+    /* position: relative; */
     border: 1px solid var(--grayish-blue-text);
   }
 }
