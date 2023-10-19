@@ -36,7 +36,7 @@
   border: none;
   padding: 5px;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 1em;
   outline: none;
   width: 200px;
 }
@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 15px;
   flex: 1;
 }
 
@@ -78,7 +78,6 @@
 
 .search-bar .menu {
   margin-right: 20px;
-  border: 1px solid red;
 }
 
 .search-bar .hamburger {
