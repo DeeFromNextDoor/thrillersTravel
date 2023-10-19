@@ -3,7 +3,7 @@ import "./SideBar.css";
 import { profileDetails, routes } from "../../assets/constants";
 import { Link } from "react-router-dom";
 
-const SideBar = () => {
+const SideBar = ({ toggleSidebar }) => {
   const { profileImage, profileName, editIcon } = profileDetails;
   const [activeLink, setActiveLink] = useState(null);
 
@@ -12,10 +12,13 @@ const SideBar = () => {
   };
 
   return (
-    <div className="side-bar">
-      <h2 className="title">
-        <span>Victor</span>Booking
-      </h2>
+    <>
+      <div className="head">
+        <h2 className="title">
+          <span>Victor</span>Booking
+        </h2>
+        <i className="bi bi-x-lg" onClick={toggleSidebar}></i>
+      </div>
       <div className="user-profile">
         <div className="profile-image">
           <img src={profileImage} alt={profileName} />
@@ -38,7 +41,7 @@ const SideBar = () => {
       <button className="logout">
         <i className="bi bi-box-arrow-in-left"></i>Logout
       </button>
-    </div>
+    </>
   );
 };
 

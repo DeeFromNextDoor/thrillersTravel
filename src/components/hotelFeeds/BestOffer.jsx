@@ -14,7 +14,7 @@ const BestOffer = ({ products }) => {
         </button>
       </div>
       <div className="hotel-cards">
-        {bestOffers.slice(1, showAll ? undefined : 6).map((product, index) => (
+        {products.slice(1, showAll ? undefined : 6).map((product, index) => (
           <div className="hotel-card" key={index}>
             <div className="hotel-image">
               <img src={product?.image} alt={product.name} />

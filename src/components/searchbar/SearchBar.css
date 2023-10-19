@@ -6,6 +6,9 @@
   align-items: center;
   padding: 15px 15px;
   border-radius: 9px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .search-form {
@@ -62,4 +65,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-bar .hamburger {
+  display: none;
+  border: none;
+  color: var(--grayish-blue-text);
+  font-size: 25px;
+  position: absolute;
+  font-weight: 600;
+  z-index: 9 !important;
+}
+
+@media (max-width: 768px) {
+  .search-bar .hamburger {
+    display: block;
+  }
+  .search-bar .menu {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid var(--grayish-blue-text);
+  }
 }

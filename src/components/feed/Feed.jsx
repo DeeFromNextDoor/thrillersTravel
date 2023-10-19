@@ -11,10 +11,10 @@ import {
   trendingDestinations,
 } from "../../assets/constants";
 
-const Feed = () => {
+const Feed = ({ toggleSidebar }) => {
   return (
     <div className="feed">
-      <SearchBar />
+      <SearchBar toggleSidebar={toggleSidebar} />
       <Hero />
       <div className="hotel-feeds">
         <TrendingDestination

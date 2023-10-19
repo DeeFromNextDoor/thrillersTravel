@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ toggleSidebar }) => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -25,6 +25,9 @@ const SearchBar = () => {
 
   return (
     <div className="search-bar">
+      <div className="menu">
+        <i className="bi bi-list hamburger" onClick={toggleSidebar}></i>
+      </div>
       <form className="search-form">
         <button type="submit" className="search-button">
           <i className="bi bi-search"></i>

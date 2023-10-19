@@ -94,7 +94,7 @@ export const bestOffers = [
   {
     image:
       "https://images.unsplash.com/photo-1614957004131-9e8f2a13123c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    name: "7Seasons Apartments",
+    name: "7S Apartments",
     location: "Kensington, London",
     price: "$65,000/night",
     icon: "bi bi-heart",
@@ -109,7 +109,7 @@ export const bestOffers = [
   },
   {
     image:
-      "https://plus.unsplash.com/premium_photo-1678240508014-d1ab7345bfe6?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8fDA%3D&w=500",
+      "https://images.unsplash.com/photo-1578774204375-826dc5d996ed?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGhvdGVsfGVufDB8fDB8fHww&w=500",
     name: "The Place Hotel",
     location: "Lagos, Nigeria",
     price: "$100/night",
@@ -125,7 +125,7 @@ export const bestOffers = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsfGVufDB8fDB8fHww&w=500",
+      "https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGhvdGVsfGVufDB8fDB8fHww&w=500",
     name: "Ronaldo Hotel",
     location: "Lisbon, Portugal",
     price: "$75/night",
@@ -157,7 +157,7 @@ export const bestOffers = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1586611292717-f828b167408c?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGhvdGVsfGVufDB8fDB8fHww&w=500",
+      "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGhvdGVsfGVufDB8fDB8fHww&w=500",
     name: "Sheraton",
     location: "Abuja, Nigeria",
     price: "$110/night",
@@ -174,21 +174,34 @@ export const bestOffers = [
 ];
 
 export const exploreParis = [
-  { title: "Explore Paris" },
+  { title: "Explore France" },
   {
-    name: "Paris Hotel 1",
     price: "$200",
     image:
       "https://images.unsplash.com/photo-1600011689032-8b628b8a8747?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     location: "Paris, France",
+    description: "Visiting the historic Montmarte district in Paris.",
+
     rating: "4.5/5",
+    icon: "bi bi-star-fill",
   },
   {
-    name: "Paris Hotel 2",
     price: "$180",
     image:
       "https://images.unsplash.com/photo-1521783988139-89397d761dce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     location: "Paris, France",
+    description: "Visiting the historic Montmarte district in Paris.",
+
     rating: "4.3/5",
+    icon: "bi bi-star-fill",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxob3RlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    location: "Montmarte, France",
+    rating: "4/5",
+    description: "Visiting the historic Montmarte district in Paris.",
+    price: "$450,000.00",
+    icon: "bi bi-star-fill",
   },
 ];

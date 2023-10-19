@@ -65,3 +65,23 @@
 .select-options select:focus {
   border-color: var(--bright-red);
 }
+
+@media (max-width: 1100px) {
+  .select-options {
+    flex-direction: column;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .select-options .select {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .select-options {
+    /* width: 100%; */
+    padding: 10px;
+  }
+}
