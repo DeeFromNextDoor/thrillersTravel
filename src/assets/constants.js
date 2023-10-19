@@ -97,7 +97,7 @@ export const bestOffers = [
     name: "7S Apartments",
     location: "Kensington, London",
     price: "$65,000/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -105,7 +105,7 @@ export const bestOffers = [
     name: "Hotel Y",
     location: "Downtown, New York",
     price: "$120/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -113,7 +113,7 @@ export const bestOffers = [
     name: "The Place Hotel",
     location: "Lagos, Nigeria",
     price: "$100/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -121,7 +121,7 @@ export const bestOffers = [
     name: "Eko Hotel",
     location: "Lagos, Nigeria",
     price: "$85/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -129,7 +129,7 @@ export const bestOffers = [
     name: "Ronaldo Hotel",
     location: "Lisbon, Portugal",
     price: "$75/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -137,7 +137,7 @@ export const bestOffers = [
     name: "Eko Atlantic",
     location: "Lagos, Nigeria",
     price: "$110/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -145,7 +145,7 @@ export const bestOffers = [
     name: "Casablanca Hotel",
     location: "Rio, Brazil",
     price: "$95/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -153,7 +153,7 @@ export const bestOffers = [
     name: "Roof Top",
     location: "Nairobi, Kenya",
     price: "$80/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -161,7 +161,7 @@ export const bestOffers = [
     name: "Sheraton",
     location: "Abuja, Nigeria",
     price: "$110/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
   {
     image:
@@ -169,7 +169,7 @@ export const bestOffers = [
     name: "Burj Khalifa",
     location: "Dubai, UAE",
     price: "$70/night",
-    icon: "bi bi-heart",
+    icon: "bi bi-heart-fill",
   },
 ];
 

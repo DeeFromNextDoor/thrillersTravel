@@ -61,6 +61,15 @@
   justify-content: space-between;
 }
 
+.best-offer .price i {
+  color: black;
+}
+
+.best-offer .price i:hover {
+  cursor: pointer;
+  color: var(--bright-red);
+}
+
 @media (max-width: 768px) {
   .best-offer {
     gap: 10px;
