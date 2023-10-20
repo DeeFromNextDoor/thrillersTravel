@@ -5,6 +5,8 @@ import { Hero } from "../hero/Hero";
 import TrendingDestination from "../hotelFeeds/TrendingDestination";
 import BestOffer from "../hotelFeeds/BestOffer";
 import { ExploreFrance } from "../hotelFeeds/ExploreFrance";
+
+// importing my custom data since i cant find the right api for this project
 import {
   bestOffers,
   exploreParis,

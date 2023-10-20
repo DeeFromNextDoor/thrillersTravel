@@ -6,6 +6,7 @@ import { fetchHotelMetaData } from "./api/hotelApi";
 function App() {
   const [hotelData, setHotelData] = useState(null);
 
+  // fetch from api but coulnt find the right api for the data i need
   useEffect(() => {
     const searchParams = {
       q: "New York",
@@ -21,6 +22,7 @@ function App() {
       })
       .catch((error) => console.error(error));
   }, []);
+
   return (
     <div className="app">
       <Home hotelData={hotelData} />
