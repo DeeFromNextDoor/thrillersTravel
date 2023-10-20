@@ -1,9 +1,12 @@
+.feed .explore-france {
+}
+
 .explore-france .head {
   display: flex;
   justify-content: flex-start;
 }
 
-h3 {
+.h3 {
   color: var(--navy-blue);
 }
 
@@ -82,11 +85,12 @@ h3 {
     justify-content: center;
   }
   .explore-france .hotel-cards {
+    flex-direction: column;
     align-items: center;
   }
 
   .explore-france .product-card {
     flex: 1;
-    width: 30%;
+    width: 90%;
   }
 }

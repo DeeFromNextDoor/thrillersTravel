@@ -9,6 +9,9 @@
   justify-content: space-between;
 }
 
+.hotel-container .title {
+  color: var(--navy-blue);
+}
 .product-cards {
   display: flex;
   overflow: hidden;
@@ -125,17 +128,10 @@
     align-items: center;
   }
   .product-cards {
-    flex-direction: row;
+    flex-direction: column;
   }
   .product-card {
     flex: 1;
-    flex-direction: column;
-    width: 30%;
-  }
-  .product-image {
-    width: 100%;
-  }
-  .product-card img {
-    width: 100%;
+    width: 90%;
   }
 }
