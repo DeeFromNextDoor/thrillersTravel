@@ -4,7 +4,7 @@ import SideBar from "../sidebar/SideBar";
 import "./Home.css";
 import { fetchHotelMetaData } from "../../api/hotelApi";
 
-const Home = () => {
+const Home = ({ hotelData }) => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -17,7 +17,7 @@ const Home = () => {
         <SideBar toggleSidebar={toggleSidebar} />
       </div>
       <div className="home-feed">
-        <Feed toggleSidebar={toggleSidebar} />
+        <Feed toggleSidebar={toggleSidebar} hotelData={hotelData} />
       </div>
     </div>
   );

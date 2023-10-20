@@ -1,11 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 import Home from "./components/home/Home";
+import { fetchHotelMetaData } from "./api/hotelApi";
 
 function App() {
+  const [hotelData, setHotelData] = useState(null);
+
+  useEffect(() => {
+    const searchParams = {
+      q: "New York",
+      locale: "en_US",
+      langid: "1033",
+      siteid: "300000001",
+    };
+
+    fetchHotelMetaData("/locations/v3/search", searchParams)
+      .then((data) => {
+        setHotelData(data);
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+  }, []);
   return (
     <div className="app">
-      <Home />
+      <Home hotelData={hotelData} />
     </div>
   );
 }

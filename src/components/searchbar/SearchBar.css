@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
   padding: 15px 15px;
   border-radius: 9px;
@@ -16,7 +17,6 @@
   align-items: center;
   border: 1px solid var(--grayish-blue-text);
   border-radius: 7px;
-  flex: 1;
 }
 
 .search-button {
@@ -38,15 +38,13 @@
   margin-left: 10px;
   font-size: 1em;
   outline: none;
-  width: 200px;
+  width: 100%;
 }
 
 .date-notification {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 15px;
-  flex: 1;
 }
 
 .notification {
@@ -98,10 +96,15 @@
     display: flex;
     align-items: center;
     height: auto;
-    width: 28px;
+    min-width: 28px;
     height: 28px;
     border-radius: 5px;
-    /* position: relative; */
     border: 1px solid var(--grayish-blue-text);
+  }
+}
+
+@media (max-width: 500px) {
+  .date-notification {
+    font-size: 12px;
   }
 }

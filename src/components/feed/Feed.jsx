@@ -11,7 +11,23 @@ import {
   trendingDestinations,
 } from "../../assets/constants";
 
-const Feed = ({ toggleSidebar }) => {
+const Feed = ({ toggleSidebar, hotelData }) => {
+  if (typeof hotelData !== "object" || hotelData === null) {
+    return (
+      <div className="feed">
+        <SearchBar toggleSidebar={toggleSidebar} />
+        <Hero />
+        <div className="hotel-feeds">
+          <p>No hotel data available.</p>
+        </div>
+      </div>
+    );
+  }
+
+  const allCountryData = Object.values(hotelData);
+
+  console.log(allCountryData);
+
   return (
     <div className="feed">
       <SearchBar toggleSidebar={toggleSidebar} />
@@ -20,9 +36,10 @@ const Feed = ({ toggleSidebar }) => {
         <TrendingDestination
           className="trending-destinations"
           products={trendingDestinations}
+          countryData={allCountryData}
         />
-        <BestOffer products={bestOffers} />
-        <ExploreFrance products={exploreParis} />
+        <BestOffer products={bestOffers} countryData={allCountryData} />
+        <ExploreFrance products={exploreParis} countryData={allCountryData} />
       </div>
     </div>
   );

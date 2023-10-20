@@ -2,7 +2,8 @@ import React, { useRef, useState } from "react";
 import "./TrendingDestination.css";
 import { placeholderImage } from "../../assets/constants";
 
-const TrendingDestination = ({ products, className }) => {
+const TrendingDestination = ({ products, className, countryData }) => {
+  console.log(countryData);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -28,7 +29,7 @@ const TrendingDestination = ({ products, className }) => {
   return (
     <div className={`hotel-container ${className}`}>
       <div className="top">
-        <h3 className="title">{products[0].title}</h3>
+        <h3 className="title">{countryData[0].branding}</h3>
         <div className="carousel">
           <i className="bi bi-chevron-left" onClick={prevSlide}></i>
           <i className="bi bi-chevron-right" onClick={nextSlide}></i>
