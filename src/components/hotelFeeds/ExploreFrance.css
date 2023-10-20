@@ -6,6 +6,10 @@
   justify-content: flex-start;
 }
 
+h3 {
+  color: var(--navy-blue);
+}
+
 .explore-france .hotel-cards {
   display: flex;
   overflow: hidden;
