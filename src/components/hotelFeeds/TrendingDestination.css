@@ -125,10 +125,17 @@
     align-items: center;
   }
   .product-cards {
-    flex-direction: column;
+    flex-direction: row;
   }
   .product-card {
     flex: 1;
-    width: 90%;
+    flex-direction: column;
+    width: 30%;
+  }
+  .product-image {
+    width: 100%;
+  }
+  .product-card img {
+    width: 100%;
   }
 }
